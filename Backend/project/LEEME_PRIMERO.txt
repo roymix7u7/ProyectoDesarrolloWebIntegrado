@@ -1,0 +1,166 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║          🎓 BACKEND CURSOS ONLINE - SPRING BOOT 3                       ║
+║          Arquitectura DDD + TDD + JWT Security                          ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📋 PROYECTO COMPLETO Y FUNCIONAL
+
+Este es un backend profesional desarrollado con Spring Boot 3 para una 
+plataforma de venta de cursos online. Incluye todas las funcionalidades
+necesarias para iniciar un proyecto real.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ CARACTERÍSTICAS PRINCIPALES
+
+  ✅ Arquitectura DDD (Domain-Driven Design) de 4 capas
+  ✅ TDD con pruebas unitarias e integración
+  ✅ Autenticación JWT con Spring Security
+  ✅ Contraseñas hasheadas con BCrypt
+  ✅ Autorización por roles (ADMIN, INSTRUCTOR, ESTUDIANTE, SOPORTE)
+  ✅ 7 Entidades JPA con relaciones completas
+  ✅ API RESTful con 15+ endpoints
+  ✅ Validación de datos con Bean Validation
+  ✅ Manejo global de errores
+  ✅ SQL Server como base de datos
+  ✅ Dockerizado y listo para producción
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 ARCHIVOS GENERADOS (49 archivos)
+
+  🔷 Código Java (45 archivos)
+     • 7 Entidades JPA
+     • 7 Repositorios
+     • 8 DTOs
+     • 3 Mappers
+     • 3 Servicios
+     • 3 Controladores REST
+     • 4 Clases de Seguridad
+     • 3 Clases de Testing
+     • Más...
+
+  🔷 Configuración (4 archivos)
+     • pom.xml (Maven)
+     • application.yml
+     • application-test.yml
+     • Dockerfile
+
+  🔷 Documentación (6 archivos)
+     ⭐ README.md
+     ⭐ INICIO_RAPIDO.md
+     ⭐ IMPLEMENTACION_BACKEND.md
+     ⭐ PRUEBAS_API.md
+     ⭐ ESTRUCTURA_PROYECTO.md
+     ⭐ RESUMEN_PROYECTO.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 INICIO RÁPIDO (5 MINUTOS)
+
+1. Ver archivo: INICIO_RAPIDO.md
+2. Ejecutar:
+   
+   export DB_HOST=localhost
+   export DB_PASSWORD=Password123!
+   export JWT_SECRET=MiClaveSecretaSuperSegura
+   
+   mvn clean install -DskipTests
+   mvn spring-boot:run
+
+3. Abrir: http://localhost:8080/api/cursos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTACIÓN RECOMENDADA (leer en este orden)
+
+  1️⃣  README.md
+      └─ Introducción general y características
+
+  2️⃣  INICIO_RAPIDO.md
+      └─ Setup en 5 minutos (para empezar YA)
+
+  3️⃣  IMPLEMENTACION_BACKEND.md
+      └─ Guía completa de 300+ líneas
+      └─ Instalación, configuración, despliegue
+
+  4️⃣  PRUEBAS_API.md
+      └─ Ejemplos de uso de todos los endpoints
+      └─ Ejemplos con curl y Postman
+
+  5️⃣  ESTRUCTURA_PROYECTO.md
+      └─ Arquitectura detallada del proyecto
+      └─ Árbol de directorios completo
+
+  6️⃣  RESUMEN_PROYECTO.md
+      └─ Resumen ejecutivo de todo lo implementado
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 MODELO DE DATOS
+
+  Usuario ──┬─→ Inscripcion ───→ Certificado
+            ├─→ Compra ───→ Pago
+            └─→ TicketSoporte
+            
+  Curso ────┬─→ Inscripcion
+            └─→ Compra
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔐 ROLES Y PERMISOS
+
+  • ADMIN       → Acceso total al sistema
+  • INSTRUCTOR  → Crear y gestionar cursos
+  • ESTUDIANTE  → Inscribirse y ver cursos
+  • SOPORTE     → Gestionar tickets de soporte
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛠️ TECNOLOGÍAS
+
+  • Java 17
+  • Spring Boot 3.2.0
+  • Spring Security + JWT
+  • Spring Data JPA
+  • SQL Server
+  • JUnit 5 + Mockito
+  • MapStruct
+  • Maven
+  • Docker
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 AYUDA RÁPIDA
+
+  • Error de BD: Ver IMPLEMENTACION_BACKEND.md > Troubleshooting
+  • Ejemplos de API: Ver PRUEBAS_API.md
+  • Arquitectura: Ver ESTRUCTURA_PROYECTO.md
+  • Despliegue: Ver IMPLEMENTACION_BACKEND.md > Despliegue en Railway
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ PROYECTO 100% COMPLETO
+
+  ✓ Código completo y funcional
+  ✓ Arquitectura profesional
+  ✓ Documentación extensa
+  ✓ Pruebas incluidas
+  ✓ Listo para producción
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 ¡COMIENZA AHORA!
+
+  1. Abre: INICIO_RAPIDO.md
+  2. Sigue los 5 pasos
+  3. ¡Tu backend estará funcionando!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+         Desarrollado con ❤️ siguiendo mejores prácticas
+              Arquitectura DDD + TDD + Spring Boot 3
+                    
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

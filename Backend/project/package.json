@@ -1,0 +1,22 @@
+{
+  "name": "cursos-online-backend",
+  "version": "1.0.0",
+  "description": "Backend profesional para plataforma de venta de cursos online con Spring Boot 3",
+  "private": true,
+  "scripts": {
+    "info": "echo '=== Backend Spring Boot 3 - Cursos Online ===' && echo 'Ver documentación:' && echo '  - README.md (Inicio rápido)' && echo '  - INICIO_RAPIDO.md (Setup en 5 minutos)' && echo '  - IMPLEMENTACION_BACKEND.md (Guía completa)' && echo '  - PRUEBAS_API.md (Ejemplos de API)' && echo '  - ESTRUCTURA_PROYECTO.md (Arquitectura)'",
+    "docs": "cat README.md"
+  },
+  "keywords": [
+    "spring-boot",
+    "java",
+    "backend",
+    "rest-api",
+    "jwt",
+    "ddd",
+    "tdd",
+    "cursos-online"
+  ],
+  "author": "Cursos Platform Team",
+  "license": "MIT"
+}
