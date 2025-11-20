@@ -66,16 +66,20 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
     }
-    @Bean
+  @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Aplica a todas las rutas
-                    // ⚠️ CRÍTICO: Tu URL de Vercel
-                    .allowedOrigins("https://proyecto-desarrollo-web-integrado.vercel.app") 
+                    // ESTA LÍNEA ES LA ÚNICA QUE CAMBIA:
+                    .allowedOrigins(
+                        "https://proyecto-desarrollo-web-integrado.vercel.app", // Dominio principal
+                        "https://proyecto-desarrollo-web-integrado-qbyjffrny.vercel.app", // Dominio actual con sufijo
+                        "https://*.vercel.app" // Comodín para cualquier subdominio de Vercel (Máxima compatibilidad)
+                    ) 
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
-                    .allowedHeaders("*") // Permite todos los encabezados
+                    .allowedHeaders("*") 
                     .allowCredentials(true); 
             }
         };
